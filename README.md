@@ -84,3 +84,70 @@ cropcare-ai/
 ├── data/            # Dataset metadata / preprocessing scripts
 ├── docs/            # Project documents
 └── README.md
+
+## Team Roles
+
+### AI Engineer
+Leads the AI development pipeline, including:
+- Dataset preprocessing
+- Disease classification model training
+- Disease detection model training
+- Severity estimation logic
+- Grad-CAM visualization
+- AI inference pipeline
+
+### Backend Engineer
+Leads the backend and data system development, including:
+- API server development
+- Database design and management
+- History and analytics APIs
+- Farm / zone management
+- App-backend integration support
+
+### Shared Responsibilities
+Both team members collaborate on:
+- Flutter UI development
+- Testing and validation
+- Presentation preparation
+- Debugging and final polishing
+
+---
+
+## Development Plan
+
+This project is planned as a 12-week capstone project.
+
+### Phase 1 — Planning and Setup
+- Requirement definition
+- System architecture design
+- Dataset analysis
+- App skeleton setup
+
+### Phase 2 — Core System Development
+- AI model development
+- API implementation
+- Mobile UI development
+
+### Phase 3 — Integration and Finalization
+- Feature integration
+- Dashboard implementation
+- Testing and debugging
+- Final presentation preparation
+
+---
+
+## Expected Impact
+
+CropCare AI is designed to help non-expert users identify crop diseases early and manage farm health more effectively through AI-powered diagnosis, record management, and zone-based monitoring.
+
+---
+
+## Status
+
+Project initialized.
+
+---
+
+## License
+
+MIT License
