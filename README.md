@@ -1,153 +1,148 @@
-# Description
-An AI-powered mobile platform that diagnoses crop diseases from images and provides farm-level monitoring and analysis.
+# 농장지킴이 
+
+AI 기반 작물 병해 진단 및 농장 모니터링 모바일 플랫폼
+
+이미지 기반 농작물 병해 진단과 농장 단위 모니터링 및 분석을 지원하는 AI 기반 모바일 플랫폼입니다.
+
+## 목표
+
+농장지킴이는 식물 이미지를 기반으로 병해를 진단하고, 농장 및 구역 단위의 병해 이력을 관리하며, 대시보드를 통해 병해 추세를 분석할 수 있도록 돕는 캡스톤 프로젝트입니다.
 
 
-# CropCare AI
 
-AI-powered mobile platform for crop disease detection and farm monitoring using plant images.
-
-## Overview
-CropCare AI is a capstone project that helps users diagnose crop diseases from plant images and monitor disease trends across farm zones.
-
-The system is designed as a mobile application with the following goals:
-- Detect crop diseases from uploaded or captured plant images
-- Visualize disease regions and explain AI predictions
-- Provide treatment recommendations and disease information
-- Store diagnosis history by farm and zone
-- Analyze disease trends through a dashboard
-- Improve user engagement with a mascot-based attendance feature
-
----
-
-## Key Features
-
-### 1. Diagnosis
-- Plant image upload or camera capture
-- Image quality check before inference
-- Disease classification
-- Disease region detection
-- Severity estimation
-- Confidence display
-- Grad-CAM visualization
-- Treatment recommendation
-- Disease detail page
-
-### 2. History Management
-- Diagnosis record storage
-- Search and filter by date, crop, disease, and zone
-- Action status tracking
-  - Pending
-  - Completed
-
-### 3. Analytics Dashboard
-- Severity trend analysis
-- Disease frequency analysis
-- Crop-wise disease analysis
-- Zone-based disease map
-- Risk zone highlighting
-- Alert notifications
-
-### 4. User Experience
-- Mascot character
-- Daily attendance check
-- Mascot growth system
+- 촬영 또는 업로드한 작물 이미지에서 병해 진단
+- 병변 위치 시각화 및 AI 예측 결과 설명
+- 방제 추천 및 질병 정보 제공
+- 농장 및 구역 단위 진단 이력 저장
+- 대시보드를 통한 병해 발생 추세 분석
+- 마스코트 기반 출석 기능을 통한 사용자 참여 유도
 
 ---
 
-## Tech Stack
+## 주요 기능
 
-### Mobile App
+### 1. 진단 기능
+- 식물 이미지 업로드 또는 카메라 촬영
+- 추론 전 이미지 품질 검사
+- 병해 분류
+- 병변 위치 탐지
+- 심각도 평가
+- 신뢰도 표시
+- Grad-CAM 시각화
+- 방제 추천
+- 질병 상세 설명 페이지
+
+### 2. 이력 관리 기능
+- 진단 기록 저장
+- 날짜, 작물, 질병, 구역 기준 검색 및 필터
+- 조치 여부 관리
+  - 미조치
+  - 조치완료
+
+### 3. 분석 대시보드
+- 심각도 변화 분석
+- 질병 발생 빈도 분석
+- 작물별 질병 분석
+- 구역별 병해 지도
+- 위험 구역 강조 표시
+- 경고 알림
+
+### 4. 사용자 경험 기능
+- 마스코트 캐릭터
+- 일일 출석 체크
+- 마스코트 성장 시스템
+
+---
+
+## 기술 스택
+
+### 모바일 앱
 - Flutter
 
-### Backend
+### 백엔드
 - FastAPI
 
 ### AI / ML
 - Python
 - PyTorch
 - OpenCV
-- YOLO / Classification Model
+- YOLO / 분류 모델
 - Grad-CAM
 
-### Database
+### 데이터베이스
 - TBD
 
 ---
 
-## Project Structure
+## 프로젝트 구조
 
 ```text
-cropcare-ai/
-├── mobile/          # Flutter app
-├── backend/         # API server
-├── ai/              # Model training and inference
-├── data/            # Dataset metadata / preprocessing scripts
-├── docs/            # Project documents
+farm-guardian/
+├── mobile/          # Flutter 앱
+├── backend/         # API 서버
+├── ai/              # 모델 학습 및 추론
+├── data/            # 데이터셋 메타데이터 / 전처리 스크립트
+├── docs/            # 프로젝트 문서
 └── README.md
 
-## Team Roles
+## 팀 정보
 
-### AI Engineer
-Leads the AI development pipeline, including:
-- Dataset preprocessing
-- Disease classification model training
-- Disease detection model training
-- Severity estimation logic
-- Grad-CAM visualization
-- AI inference pipeline
-
-### Backend Engineer
-Leads the backend and data system development, including:
-- API server development
-- Database design and management
-- History and analytics APIs
-- Farm / zone management
-- App-backend integration support
-
-### Shared Responsibilities
-Both team members collaborate on:
-- Flutter UI development
-- Testing and validation
-- Presentation preparation
-- Debugging and final polishing
+- **팀명:** CropCare
+- **프로젝트명:** 농장지킴이
 
 ---
 
-## Development Plan
+## 역할 분담
 
-This project is planned as a 12-week capstone project.
+### AI 담당
+AI 파이프라인 및 모델 개발을 담당합니다.
+- 데이터셋 전처리
+- 병해 분류 모델 학습
+- 병변 탐지 모델 학습
+- 심각도 산정 로직 구현
+- Grad-CAM 시각화
+- AI 추론 파이프라인 구성
 
-### Phase 1 — Planning and Setup
-- Requirement definition
-- System architecture design
-- Dataset analysis
-- App skeleton setup
+### 백엔드 담당
+서버 및 데이터 관리 시스템 개발을 담당합니다.
+- API 서버 개발
+- 데이터베이스 설계 및 관리
+- 이력 및 분석 API 개발
+- 농장 / 구역 데이터 관리
+- 앱-백엔드 연동 지원
 
-### Phase 2 — Core System Development
-- AI model development
-- API implementation
-- Mobile UI development
-
-### Phase 3 — Integration and Finalization
-- Feature integration
-- Dashboard implementation
-- Testing and debugging
-- Final presentation preparation
-
----
-
-## Expected Impact
-
-CropCare AI is designed to help non-expert users identify crop diseases early and manage farm health more effectively through AI-powered diagnosis, record management, and zone-based monitoring.
-
----
-
-## Status
-
-Project initialized.
+### 공동 작업
+두 팀원이 함께 수행합니다.
+- Flutter UI 개발
+- 테스트 및 검증
+- 발표 자료 준비
+- 디버깅 및 최종 완성도 향상
 
 ---
 
-## License
+## 개발 계획
 
-MIT License
+본 프로젝트는 12주 캡스톤 일정에 맞추어 진행됩니다.
+
+### 1단계 — 기획 및 환경 구성
+- 요구사항 정의
+- 시스템 구조 설계
+- 데이터셋 분석
+- 앱 스켈레톤 구성
+
+### 2단계 — 핵심 기능 개발
+- AI 모델 개발
+- API 구현
+- 모바일 UI 개발
+
+### 3단계 — 통합 및 마무리
+- 기능 통합
+- 대시보드 구현
+- 테스트 및 디버깅
+- 최종 발표 준비
+
+---
+
+## 기대 효과
+
+농장지킴이는 비전문 사용자도 작물 이미지를 통해 병해를 조기에 진단하고, 진단 기록과 구역 단위 모니터링을 기반으로 농장 건강 상태를 보다 체계적으로 관리할 수 있도록 돕는 것을 목표로 합니다.
